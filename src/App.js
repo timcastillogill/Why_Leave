@@ -1,10 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
-import Business from './App2';
+import Business from './country';
+import News from './news';
+
 function App() {
   return (
     <div className="App">
       < Business />
+      <News />
     </div>
   );
 }

@@ -1,4 +1,6 @@
 import React from "react";
+import './country.css';
+
 const business = {
   country: "Syria",
   population: 72,
