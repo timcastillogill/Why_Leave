@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import Country from './country'
+import Country from './country.js'
 
 let spyOn
 
