@@ -30,7 +30,7 @@ const guardian = {
         <div className="News-information">
           <div className="News-address">
             <p>{task}...</p>
-            <a href={guardian.webUrl} target="_blank">Read more</a>
+            <a href={guardian.webUrl} target="_blank" rel="noreferrer">Read more</a>
           </div>
         </div>
       </div>

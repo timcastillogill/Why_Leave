@@ -1,6 +1,6 @@
-import './App.css';
-import Business from './country';
-import News from './news';
+import '../App/App.css'
+import Business from '../country/country.js';
+import News from '../news/news.js';
 
 function App() {
   return (
