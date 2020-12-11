@@ -1,10 +1,26 @@
 import React from 'react';
+import {GoogleMap, withScriptjs, withGoogleMap} from "react-google-maps"
 
-const Map = () => {
-
+function GoogleMaps() {
   return (
-    <div className="background">
-      <img src={"https://adagebiopower.com/wp-content/uploads/2018/07/world-map-with-countries-white-simple-world-map-flat-new-diagram-and-the-feerick-of-world-map-with-countries-white.png"} alt="" />
-    </div>
-  )
+     <GoogleMap
+      defaultZoom={2.5}
+      defaultCenter={{lat: 51.39305, lng: -0.304320}}
+      />
+  );
+}
+
+const WrappedMap = withScriptjs(withGoogleMap(GoogleMaps));
+
+export default function Map() {
+  return (
+  < div style={{width: '100vw', height: '100vh'}}>
+  <WrappedMap
+    googleMapURL={'https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key='}
+    loadingElement={<div style={{ height: "100%" }}/>}
+    containerElement={<div style={{ height: "100%" }}/>}
+    mapElement={<div style={{ height: "100%" }}/>}
+   />
+  </div>
+ );
 }
