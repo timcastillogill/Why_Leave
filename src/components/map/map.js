@@ -1,24 +1,42 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {GoogleMap,
   withScriptjs,
   withGoogleMap,
-  Marker
+  Marker,
+  InfoWindow
 } from "react-google-maps"
 
 import * as parkData from "../../data/skateboard-parks.json";
 function GoogleMaps() {
+  const [selectedPark,setSelectedPark] = useState(null);
+
   return (
-     <GoogleMap
+    <GoogleMap
       defaultZoom={2.5}
       defaultCenter={{lat: 51.39305, lng: -0.304320}}
       >
       {parkData.features.map((park)=> (
-        <Marker key={park.properties.PARK_ID} position={{
+        <Marker 
+          key={park.properties.PARK_ID} 
+          position={{
           lat: park.geometry.coordinates[1],
           lng: park.geometry.coordinates[0]
         }}
+        onClick={() =>{
+          setSelectedPark(park);
+        }}
         />
       ))}
+
+      {selectedPark && (
+        <InfoWindow>
+          position={{
+          lat: selectedPark.geometry.coordinates[1],
+          lng: selectedPark.geometry.coordinates[0]
+        }}
+          <div>park details</div>
+        </InfoWindow>
+      )}
       </GoogleMap>
   );
 }
