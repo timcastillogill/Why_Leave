@@ -5,7 +5,7 @@ import {GoogleMap,
   Marker
 } from "react-google-maps"
 
-import * as parkData from "./data/skateboard-parks.json";
+import * as parkData from "../../data/skateboard-parks.json";
 function GoogleMaps() {
   return (
      <GoogleMap
