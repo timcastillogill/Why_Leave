@@ -38,6 +38,7 @@
     ]
   },
   "devDependencies": {
-    "eslint-plugin-react": "^7.21.5"
+    "eslint-plugin-react": "^7.21.5",
+    "install-peers": "^1.0.3"
   }
 }
