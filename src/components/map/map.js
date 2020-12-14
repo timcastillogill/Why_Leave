@@ -29,11 +29,16 @@ function GoogleMaps() {
       ))}
 
       {selectedPark && (
-        <InfoWindow>
+        <InfoWindow
+
           position={{
           lat: selectedPark.geometry.coordinates[1],
           lng: selectedPark.geometry.coordinates[0]
         }}
+        onCloseClick={() => {
+            setSelectedPark(null);
+          }}
+        >
           <div>park details</div>
         </InfoWindow>
       )}
