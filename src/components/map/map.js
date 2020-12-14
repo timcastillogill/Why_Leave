@@ -1,12 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {GoogleMap,
   withScriptjs,
   withGoogleMap,
   Marker,
   InfoWindow
 } from "react-google-maps"
-
 import * as parkData from "../../data/skateboard-parks.json";
+import mapStyles from './mapStyles.js';
+
 function GoogleMaps() {
   const [selectedPark, setSelectedPark] = useState(null);
 
@@ -14,6 +15,7 @@ function GoogleMaps() {
     <GoogleMap
       defaultZoom={2.5}
       defaultCenter={{lat: 51.39305, lng: -0.304320}}
+      defaultOptions={{ styles: mapStyles }}
       >
       {parkData.features.map(park => (
         <Marker
@@ -25,6 +27,10 @@ function GoogleMaps() {
           onClick={() => {
             setSelectedPark(park);
           }}
+          icon={{
+        url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Flag_of_Syria.svg/1280px-Flag_of_Syria.svg.png',
+        scaledSize: new window.google.maps.Size(40, 30)
+      }}
         />
       ))}
 
@@ -39,7 +45,10 @@ function GoogleMaps() {
             setSelectedPark(null);
           }}
         >
-          <div>park details</div>
+          <div>
+          <h2>{selectedPark.properties.country}</h2>
+          <p>{selectedPark.properties.description}</p>
+          </div>
         </InfoWindow>
       )}
       </GoogleMap>
