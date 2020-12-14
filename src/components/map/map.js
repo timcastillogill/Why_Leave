@@ -5,7 +5,7 @@ import {GoogleMap,
   Marker,
   InfoWindow
 } from "react-google-maps"
-import * as parkData from "../../data/skateboard-parks.json";
+import jsonData from "../../data/heroku.json";
 import mapStyles from './mapStyles.js';
 
 function GoogleMaps() {
@@ -17,12 +17,13 @@ function GoogleMaps() {
       defaultCenter={{lat: 51.39305, lng: -0.304320}}
       defaultOptions={{ styles: mapStyles }}
       >
-      {parkData.features.map(park => (
+      {jsonData.map(park => (
         <Marker
-          key={park.properties.PARK_ID}
+          key={park.id}
           position={{
-            lat: park.geometry.coordinates[1],
-            lng: park.geometry.coordinates[0]
+            lat: park.latitude,
+            lng: park.longitude,
+            population: park.population
           }}
           onClick={() => {
             setSelectedPark(park);
@@ -38,16 +39,16 @@ function GoogleMaps() {
         <InfoWindow
 
           position={{
-          lat: selectedPark.geometry.coordinates[1],
-          lng: selectedPark.geometry.coordinates[0]
+          lat: selectedPark.latitude,
+          lng: selectedPark.longitude
         }}
         onCloseClick={() => {
             setSelectedPark(null);
           }}
         >
           <div>
-          <h2>{selectedPark.properties.country}</h2>
-          <p>{selectedPark.properties.description}</p>
+          <h2>{selectedPark.country}</h2>
+          <p>{selectedPark.population}</p>
           </div>
         </InfoWindow>
       )}
