@@ -1,58 +1,58 @@
-import React, { useState, useEffect } from 'react';
-import {GoogleMap,
+import React, { useState, useEffect } from "react";
+import {
+  GoogleMap,
   withScriptjs,
   withGoogleMap,
   Marker,
-  InfoWindow
-} from "react-google-maps"
+  InfoWindow,
+} from "react-google-maps";
 import jsonData from "../../data/heroku.json";
-import mapStyles from './mapStyles.js';
+import mapStyles from "./mapStyles.js";
 
 function GoogleMaps() {
-  const [selectedPark, setSelectedPark] = useState(null);
+  const [selectedCountry, setSelectedCountry] = useState(null);
 
   return (
     <GoogleMap
       defaultZoom={2.5}
-      defaultCenter={{lat: 51.39305, lng: -0.304320}}
+      defaultCenter={{ lat: 51.39305, lng: -0.30432 }}
       defaultOptions={{ styles: mapStyles }}
-      >
-      {jsonData.map(park => (
+    >
+      {jsonData.map((country) => (
         <Marker
-          key={park.id}
+          key={country.id}
           position={{
-            lat: park.latitude,
-            lng: park.longitude,
-            population: park.population
+            lat: country.latitude,
+            lng: country.longitude,
+            population: country.population,
           }}
           onClick={() => {
-            setSelectedPark(park);
+            setSelectedCountry(country);
           }}
           icon={{
-        img: './big head pin_4735746',
-        scaledSize: new window.google.maps.Size(35, 50)
-      }}
+            img: "./big head pin_4735746",
+            scaledSize: new window.google.maps.Size(35, 50),
+          }}
         />
       ))}
 
-      {selectedPark && (
+      {selectedCountry && (
         <InfoWindow
-
           position={{
-          lat: selectedPark.latitude,
-          lng: selectedPark.longitude
-        }}
-        onCloseClick={() => {
-            setSelectedPark(null);
+            lat: selectedCountry.latitude,
+            lng: selectedCountry.longitude,
+          }}
+          onCloseClick={() => {
+            setSelectedCountry(null);
           }}
         >
           <div>
-          <h2>{selectedPark.country}</h2>
-          <p>{selectedPark.population}</p>
+            <h2>{selectedCountry.country}</h2>
+            <p>{selectedCountry.population}</p>
           </div>
         </InfoWindow>
       )}
-      </GoogleMap>
+    </GoogleMap>
   );
 }
 
@@ -60,13 +60,13 @@ const WrappedMap = withScriptjs(withGoogleMap(GoogleMaps));
 
 export default function Map() {
   return (
-  < div style={{width: '100vw', height: '100vh'}}>
-  <WrappedMap
-    googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${process.env.REACT_APP_GOOGLE_KEY}`}
-    loadingElement={<div style={{ height: "100%" }}/>}
-    containerElement={<div style={{ height: "100%" }}/>}
-    mapElement={<div style={{ height: "100%" }}/>}
-   />
-  </div>
- );
+    <div style={{ width: "100vw", height: "100vh" }}>
+      <WrappedMap
+        googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${process.env.REACT_APP_GOOGLE_KEY}`}
+        loadingElement={<div style={{ height: "100%" }} />}
+        containerElement={<div style={{ height: "100%" }} />}
+        mapElement={<div style={{ height: "100%" }} />}
+      />
+    </div>
+  );
 }
