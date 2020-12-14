@@ -8,23 +8,23 @@ import {GoogleMap,
 
 import * as parkData from "../../data/skateboard-parks.json";
 function GoogleMaps() {
-  const [selectedPark,setSelectedPark] = useState(null);
+  const [selectedPark, setSelectedPark] = useState(null);
 
   return (
     <GoogleMap
       defaultZoom={2.5}
       defaultCenter={{lat: 51.39305, lng: -0.304320}}
       >
-      {parkData.features.map((park)=> (
-        <Marker 
-          key={park.properties.PARK_ID} 
+      {parkData.features.map(park => (
+        <Marker
+          key={park.properties.PARK_ID}
           position={{
-          lat: park.geometry.coordinates[1],
-          lng: park.geometry.coordinates[0]
-        }}
-        onClick={() =>{
-          setSelectedPark(park);
-        }}
+            lat: park.geometry.coordinates[1],
+            lng: park.geometry.coordinates[0]
+          }}
+          onClick={() => {
+            setSelectedPark(park);
+          }}
         />
       ))}
 
