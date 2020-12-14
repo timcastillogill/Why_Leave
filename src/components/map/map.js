@@ -30,8 +30,8 @@ function GoogleMaps() {
             setSelectedCountry(country);
           }}
           icon={{
-            img: "./big head pin_4735746",
-            scaledSize: new window.google.maps.Size(35, 50),
+            url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Flag_of_Syria.svg/1280px-Flag_of_Syria.svg.png',
+            scaledSize: new window.google.maps.Size(40, 30),
           }}
         />
       ))}
