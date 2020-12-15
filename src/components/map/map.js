@@ -6,7 +6,7 @@ import {
   Marker,
   InfoWindow,
 } from "react-google-maps";
-import jsonData from "../../data/heroku.json";
+import jsonData from "../../data/countries.json";
 import mapStyles from "./mapStyles.js";
 
 function GoogleMaps() {
