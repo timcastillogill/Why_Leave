@@ -30,6 +30,7 @@ function GoogleMaps() {
           onClick={() => {
             setSelectedCountry(country);
           }}
+          defaultLabel={country.country}
         />
       ))}
 
