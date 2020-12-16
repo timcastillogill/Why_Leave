@@ -6,19 +6,31 @@ import {
   Marker,
   InfoWindow,
 } from "react-google-maps";
-import jsonData from "../../data/heroku.json";
 import mapStyles from "./mapStyles.js";
 
+const fetchURL = "https://why-leave.herokuapp.com/"
+    
 function GoogleMaps() {
   const [selectedCountry, setSelectedCountry] = useState(null);
+
+  const [data, setData] = useState(null)
+  const getData = () =>
+    fetch(`${fetchURL}/countries`)
+      .then((res) => res.json())
+
+      useEffect(() => {
+        getData().then((data) => setData(data))
+      }, [])
 
   return (
     <GoogleMap
       defaultZoom={2.5}
       defaultCenter={{ lat: 51.39305, lng: -0.30432 }}
-      defaultOptions={{ styles: mapStyles.mapCanvas }}
+      defaultOptions={{ styles: mapStyles }}
+      options={{ disableDefaultUI: true }}
+
     >
-      {jsonData.map((country) => (
+      {data?.map((country) => (
         <Marker
           key={country.id}
           position={{
@@ -28,10 +40,6 @@ function GoogleMaps() {
           }}
           onClick={() => {
             setSelectedCountry(country);
-          }}
-          icon={{
-            url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Flag_of_Syria.svg/1280px-Flag_of_Syria.svg.png',
-            scaledSize: new window.google.maps.Size(40, 30),
           }}
         />
       ))}
@@ -48,7 +56,8 @@ function GoogleMaps() {
         >
           <div>
             <h2>{selectedCountry.country}</h2>
-            <p>{selectedCountry.population}</p>
+            <p>Population: {selectedCountry.population}  |  Refugees: {selectedCountry.refugees}</p>
+            <p>{selectedCountry.causes[0].description} </p>
           </div>
         </InfoWindow>
       )}
