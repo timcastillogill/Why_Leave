@@ -4,8 +4,8 @@ import * as ReactBootStrap from 'react-bootstrap';
 
 export default function NavBar() {
   return (
-    <div className="nav-bar">
-       <ReactBootStrap.Navbar bg="light" variant="light">
+    <div className="nav-bar" fixed="top">
+       <ReactBootStrap.Navbar >
         <ReactBootStrap.Navbar.Brand href="#home">Why Leave?</ReactBootStrap.Navbar.Brand>
           <ReactBootStrap.Nav className="mr-auto">
               <ReactBootStrap.Nav.Link float="left" href="#home">Home</ReactBootStrap.Nav.Link>
