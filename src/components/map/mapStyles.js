@@ -1,4 +1,4 @@
-export default [
+ let styles = [
     {
         "elementType": "labels",
         "stylers": [
@@ -199,3 +199,4 @@ export default [
     {},
     {}
 ]
+export default styles;
