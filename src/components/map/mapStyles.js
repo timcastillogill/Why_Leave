@@ -1,4 +1,5 @@
-export default [{
+const mapStylesArray = [
+  {
     "featureType": "administrative",
     "elementType": "all",
     "stylers": [{
@@ -260,3 +261,5 @@ export default [{
     }]
   }
 ]
+
+export default mapStylesArray;

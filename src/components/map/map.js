@@ -26,7 +26,7 @@ function GoogleMaps() {
     <GoogleMap
       defaultZoom={2.5}
       defaultCenter={{ lat: 51.39305, lng: -0.30432 }}
-      defaultOptions={{ styles: mapStyles }}
+      defaultOptions={{ styles: mapStyles.mapStylesArray }}
       options={{ disableDefaultUI: true }}
 
     >
