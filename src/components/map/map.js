@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
+import mapStyles from './mapStyles.js';
+
 import {
-  GoogleMap,
-  withScriptjs,
   withGoogleMap,
+  withScriptjs,
+  GoogleMap,
   Marker,
-  InfoWindow,
+  InfoWindow
 } from "react-google-maps";
-import mapStyles from "./mapStyles.js";
 
 const fetchURL = "https://why-leave.herokuapp.com/";
 
@@ -24,19 +25,16 @@ function GoogleMaps() {
 
   return (
     <GoogleMap
+    // options={{
+    //   // gestureHandling: "greedy",
+    //   // draggable: false,
+    //   // scrollwheel: false,
+    //   // disableDoubleClickZoom: true,
+    // }}
       defaultZoom={3}
       defaultCenter={{ lat: 28, lng: 1.6 }}
-      defaultOptions={{ styles: mapStyles.mapStylesArray }}
-      options={{
-        disableDefaultUI: true,
-        // gestureHandling: "greedy",
-        // draggable: false,
-        // zoomControl: false,
-        // scrollwheel: false,
-        // disableDoubleClickZoom: true,
-        minZoom: 3,
-        maxZoom: 3,
-      }}
+      defaultOptions={{ styles: mapStyles, minZoom: 3, maxZoom: 3, disableDefaultUI: true }}
+
     >
       {data?.map((country) => (
         <Marker
