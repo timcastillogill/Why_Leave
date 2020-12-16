@@ -8,27 +8,32 @@ import {
 } from "react-google-maps";
 import mapStyles from "./mapStyles.js";
 
-const fetchURL = "https://why-leave.herokuapp.com/"
-    
+const fetchURL = "https://why-leave.herokuapp.com/";
+
 function GoogleMaps() {
   const [selectedCountry, setSelectedCountry] = useState(null);
 
-  const [data, setData] = useState(null)
+  const [data, setData] = useState(null);
   const getData = () =>
-    fetch(`${fetchURL}/countries`)
-      .then((res) => res.json())
+    fetch(`${fetchURL}/countries`).then((res) => res.json());
 
-      useEffect(() => {
-        getData().then((data) => setData(data))
-      }, [])
+  useEffect(() => {
+    getData().then((data) => setData(data));
+  }, []);
 
   return (
     <GoogleMap
       defaultZoom={2.5}
       defaultCenter={{ lat: 51.39305, lng: -0.30432 }}
       defaultOptions={{ styles: mapStyles.mapStylesArray }}
-      options={{ disableDefaultUI: true }}
-
+      options={{
+        disableDefaultUI: true,
+        gestureHandling: "greedy",
+        draggable: false,
+        zoomControl: false,
+        scrollwheel: false,
+        disableDoubleClickZoom: true,
+      }}
     >
       {data?.map((country) => (
         <Marker
@@ -56,7 +61,10 @@ function GoogleMaps() {
         >
           <div>
             <h2>{selectedCountry.country}</h2>
-            <p>Population: {selectedCountry.population}  |  Refugees: {selectedCountry.refugees}</p>
+            <p>
+              Population: {selectedCountry.population} | Refugees:{" "}
+              {selectedCountry.refugees}
+            </p>
             <p>{selectedCountry.causes[0].description} </p>
           </div>
         </InfoWindow>
