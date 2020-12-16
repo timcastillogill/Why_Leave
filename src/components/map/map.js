@@ -16,7 +16,7 @@ function GoogleMaps() {
     <GoogleMap
       defaultZoom={2.5}
       defaultCenter={{ lat: 51.39305, lng: -0.30432 }}
-      defaultOptions={{ styles: mapStyles }}
+      defaultOptions={{ styles: mapStyles.mapCanvas }}
     >
       {jsonData.map((country) => (
         <Marker
@@ -58,7 +58,7 @@ function GoogleMaps() {
 
 const WrappedMap = withScriptjs(withGoogleMap(GoogleMaps));
 
-export default function Map() {
+function Map() {
   return (
     <div style={{ width: "100vw", height: "100vh" }}>
       <WrappedMap
@@ -70,3 +70,5 @@ export default function Map() {
     </div>
   );
 }
+
+export default Map;
