@@ -27,12 +27,12 @@ function GoogleMaps() {
       defaultCenter={{ lat: 28, lng: 1.6 }}
       defaultOptions={{ styles: mapStyles.mapStylesArray }}
       options={{
-        disableDefaultUI: true,
-        gestureHandling: "greedy",
+        // disableDefaultUI: true,
+        // gestureHandling: "greedy",
         draggable: false,
-        zoomControl: false,
+        // zoomControl: false,
         scrollwheel: false,
-        disableDoubleClickZoom: true,
+        // disableDoubleClickZoom: true,
       }}
     >
       {data?.map((country) => (
