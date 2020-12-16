@@ -14,6 +14,7 @@ function GoogleMaps() {
   const [selectedCountry, setSelectedCountry] = useState(null);
 
   const [data, setData] = useState(null);
+
   const getData = () =>
     fetch(`${fetchURL}/countries`).then((res) => res.json());
 
@@ -23,16 +24,18 @@ function GoogleMaps() {
 
   return (
     <GoogleMap
-      defaultZoom={2.3}
+      defaultZoom={3}
       defaultCenter={{ lat: 28, lng: 1.6 }}
       defaultOptions={{ styles: mapStyles.mapStylesArray }}
       options={{
-        // disableDefaultUI: true,
+        disableDefaultUI: true,
         // gestureHandling: "greedy",
-        draggable: false,
+        // draggable: false,
         // zoomControl: false,
-        scrollwheel: false,
+        // scrollwheel: false,
         // disableDoubleClickZoom: true,
+        minZoom: 3,
+        maxZoom: 3,
       }}
     >
       {data?.map((country) => (
