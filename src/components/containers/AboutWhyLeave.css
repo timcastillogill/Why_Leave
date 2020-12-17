@@ -1,0 +1,33 @@
+.circ {
+  background-color: #fcecd4;
+  border-radius: 50%;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 200px;
+}
+
+.box-of-boxes {
+  padding-bottom: 500px;
+  padding-top: 50px;
+}
+
+.info-box {
+  padding: 100px;
+  color: black;
+}
+
+.lander {
+  color: black;
+}
+
+.amnesty-quote {
+  font-weight: bold;
+  color: black;
+}
+
+.welcome-presents {
+  font-style: italic;
+  color: black;
+}
+

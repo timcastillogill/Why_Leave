@@ -1,0 +1,20 @@
+.circ {
+  background-color: #fcecd4;
+  border-radius: 50%;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 200px;
+}
+
+.box-of-boxes {
+  padding-bottom: 500px;
+  padding-top: 50px;
+  justify-content: center;
+}
+
+.support-text {
+  padding: 200px;
+  color:black;
+}
+
