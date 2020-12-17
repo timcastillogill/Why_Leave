@@ -5,7 +5,7 @@ export default function Learn() {
   return (
     <div className="box-of-boxes">
       <div className="circ">
-        <div className="Learn container">
+        <div className="learn container">
           <div className="masterBox">
             <div className="box1">
               <div className="title">

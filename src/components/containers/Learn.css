@@ -5,7 +5,8 @@
   /* max-width: 1400px; */
   width: 100%;
   margin: 0 auto;
-  padding-bottom: 300px;
+  padding-bottom: 600px;
+  padding-top: 50px;
 }
 
 .box-of-boxes {
@@ -13,8 +14,8 @@
   padding-top: 50px;
 }
 
-.Learn {
-  /* margin-bottom: 50%; */
+.learnContainer {
+  margin-bottom: 50%;
 }
 
 
