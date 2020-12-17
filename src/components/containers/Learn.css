@@ -1,9 +1,10 @@
-.Learn .lander {
-  padding: 500px 0;
-  text-align: baseline;
+.Learn {
+  padding: 100px 0;
+  text-align: center;
+  width: 80%;
 }
 
-.Learn .lander h1 {
+.Learn .box1 h1 {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
 }

@@ -9,8 +9,8 @@ export default function NavBar() {
         <ReactBootStrap.Navbar.Brand href="/">Why Leave?</ReactBootStrap.Navbar.Brand>
           <ReactBootStrap.Nav className="ml-auto">
               <ReactBootStrap.Nav.Link float="left" href="/">Home</ReactBootStrap.Nav.Link>
-              <ReactBootStrap.Nav.Link href="/about">About</ReactBootStrap.Nav.Link>
               <ReactBootStrap.Nav.Link href="/learn">Learn</ReactBootStrap.Nav.Link>
+              <ReactBootStrap.Nav.Link href="/about">About</ReactBootStrap.Nav.Link>
               <ReactBootStrap.Nav.Link href="/support">Support</ReactBootStrap.Nav.Link>
           </ReactBootStrap.Nav>
       </ReactBootStrap.Navbar>
