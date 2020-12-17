@@ -80,7 +80,11 @@ export default function Learn() {
             nevertheless be in danger if they went home.
           </p>
         </div>
+        <div className="website">
+          <p>The information above was taken from Amnesty International, to read the full article click 
+          <a href="https://www.amnesty.org/en/what-we-do/refugees-asylum-seekers-and-migrants/" target="_blank"> here</a></p>
+          </div>
+        </div>
       </div>
-    </div>
   );
 }

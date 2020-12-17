@@ -1,10 +1,15 @@
 .Learn {
-  padding: 100px 0;
+  padding: 100px;
   text-align: center;
-  width: 80%;
 }
 
 .Learn .box1 h1 {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
 }
+.Learn .website {
+  font-style: italic;
+}
+/* .box1 {
+ font-family: "Open Sans";
+} */
