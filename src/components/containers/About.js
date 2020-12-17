@@ -1,9 +1,10 @@
 import React from "react";
+import './About.css';
 
 const developers = [
   {
     img: 'https://avatars3.githubusercontent.com/u/65120248?s=400&u=669d78c0517eacad4d2f314d59cb7628efb76727&v=4',
-    name: 'Krzysztof',
+    name: 'Krzysztof Jankowski',
     gitHub: 'https://github.com/jotkafomat',
   },
   {
@@ -52,10 +53,10 @@ const Image = (props) => {
   const { img, name, gitHub } = props.image;
   return (
     <article className="image">
-      <img src={img} alt="" />
+      <img className="image2" src={img} alt="" />
+
       <h4>{name}</h4>
-      <h6>{gitHub}</h6>
+      <h8>{gitHub}</h8>
     </article>
   );
 };
-
