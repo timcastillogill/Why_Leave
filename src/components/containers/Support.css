@@ -4,7 +4,7 @@
   max-width: 1400px;
   width: 100%;
   margin: 0 auto;
-  padding: 180px;
+  padding: 200px;
 }
 
 .box-of-boxes {
@@ -14,9 +14,7 @@
 }
 
 .support-text {
+  padding: 200px;
   color:black;
 }
 
-.web {
-  text-align: left;
-}
