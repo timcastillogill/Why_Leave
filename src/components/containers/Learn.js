@@ -89,7 +89,7 @@ export default function Learn() {
             the full article click
             <a
               href="https://www.amnesty.org/en/what-we-do/refugees-asylum-seekers-and-migrants/"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
             >
               {" "}
               here
