@@ -1,9 +1,14 @@
 .nav-bar {
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 0.1);
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background-color: #c3c0c085;
 }
-  
-.mc-auto, .navbar-nav {
-  margin-left: 80%!important;
-  float: right!important;
+
+.nav-bar a:link {
+  color: black!important;
+} 
+
+.nav-bar a:hover {
+  color: rgb(148, 125, 105)!important;
 }
