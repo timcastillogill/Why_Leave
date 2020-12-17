@@ -1,0 +1,64 @@
+
+.circ {
+  background-color: #fcecd4;
+  border-radius: 50%;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 180px;
+}
+
+.box-of-boxes {
+  padding-bottom: 500px;
+  padding-top: 50px;
+}
+
+.Learn {
+  /* margin-bottom: 50%; */
+}
+
+.masterBox {
+  /* margin-bottom: 50%; */
+  /* margin-top: 20%; */
+}
+
+
+.left {
+  display: flex;
+  float: left;
+  width: 50%;
+  align-items: center;
+}
+
+.right {
+  display: flex;
+  float: right;
+  width: 50%;
+}
+
+.Learn h1 {
+  text-decoration: underline;
+}
+
+.box1 {
+  align-items: center;
+}
+
+.website {
+  align-items: center;
+  font-style: italics;
+}
+
+
+/* sea blue: #97b5bf
+countries: #f7cda9
+pins: #ea4335
+
+Matching
+#b68888
+#c4aa97
+#fbe9e2
+#db9c84
+#a99c8c
+#ec6c5c
+#fcecd4 */
