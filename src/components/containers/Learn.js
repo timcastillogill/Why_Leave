@@ -3,7 +3,7 @@ import "./Learn.css";
 
 export default function Learn() {
   return (
-    <div className="Learn">
+    <div className="Learn container p-5" >
       <div className="masterBox">
         <div className="box1">
           <div className="title">
