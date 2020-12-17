@@ -41,7 +41,7 @@ export default function AboutWhyLeave() {
               and asylum seekers      
               <a
                 href="https://www.instagram.com/welcomepresents/?hl=en"
-                target="_blank"
+                target="_blank" rel="noreferrer"
               >
                 {" "}
                  here.
