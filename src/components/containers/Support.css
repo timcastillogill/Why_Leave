@@ -1,9 +1,22 @@
-.Home .lander {
-  padding: 500px 0;
-  text-align: center;
+.circ {
+  background-color: #fcecd4;
+  border-radius: 50%;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 180px;
 }
 
-.Home .lander h1 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
+.box-of-boxes {
+  padding-bottom: 500px;
+  padding-top: 50px;
+  justify-content: center;
+}
+
+.support-text {
+  color:black;
+}
+
+.web {
+  text-align: left;
 }
