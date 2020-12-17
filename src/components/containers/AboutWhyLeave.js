@@ -65,7 +65,7 @@ export default function AboutWhyLeave() {
       </div>
       <br></br>
       <br></br>
-      <h2>Developer Team</h2>
+      <h2>Meet the makers</h2>
       <br></br>
       <br></br>
       <div className="dev-box container">
