@@ -52,10 +52,10 @@ const Image = (props) => {
   const { img, name, gitHub } = props.image;
   return (
     <article className="image">
-      <img className="image2" src={img} alt="" />
-
-      <h4>{name}</h4>
-      <h8>{gitHub}</h8>
+      <a href={gitHub} target="_blank" rel="noreferrer">
+        <img className="image2" src={img} alt="" />
+      </a>
+      <h5>{name}</h5>
     </article>
   );
 };

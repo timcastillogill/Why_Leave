@@ -1,5 +1,7 @@
 import React from "react";
 import "./AboutWhyLeave.css";
+import About from "./About";
+import "./About.css";
 
 
 const developers = [
@@ -100,7 +102,9 @@ export default function AboutWhyLeave() {
           </div>
         </div>
       </div>
-      <
+      <div className="dev-box container">
+        <About />
+      </div>
     </div>
   );
 }
