@@ -5,7 +5,7 @@ export default function Learn() {
   return (
     <div className="Learn">
       <div className="box1">
-        <h1>Why Do People Leave Their Countries?</h1>
+        <h1>Why Do People Leave Their Countries?</h1><br></br>
         <p>
           There are many reasons why it might be too difficult or dangerous for
           people to stay in their own countries. For example, children, woman
@@ -25,7 +25,7 @@ export default function Learn() {
 
       <div className="left">
         <div className="box2">
-          <h1>What exactly is a refugee, an asylum-seeker and a migrant?</h1>
+          <h2>What exactly is a refugee, an asylum-seeker and a migrant?</h2>
           <p>
             The terms “refugee”, “asylum-seeker” and “migrant” are used to
             describe people who are on the move, who have left their countries
@@ -33,9 +33,8 @@ export default function Learn() {
             often used interchangeably but it is important to distinguish
             between them as there is a legal difference.
           </p>
-        </div>
-        <div className="box3">
-          <h1>Who is a refugee?</h1>
+        
+          <h2>Who is a refugee?</h2>
           <p>
             A refugee is a person who has fled their own country because they
             are at risk of serious human rights violations and persecution
@@ -49,7 +48,7 @@ export default function Learn() {
       </div>
       <div className="right">
         <div className="box4">
-          <h1>Who is an asylum-seeker?</h1>
+          <h2>Who is an asylum-seeker?</h2>
           <p>
             An asylum-seeker is a person who has left their country and is
             seeking protection from persecution and serious human rights
@@ -58,10 +57,9 @@ export default function Learn() {
             their asylum claim. Seeking asylum is a human right. This means
             everyone should be allowed to enter another country to seek asylum.
           </p>
-        </div>
+        
 
-        <div className="box5">
-          <h1>Who is a migrant?</h1>
+          <h2>Who is a migrant?</h2>
           <p>
             There is no internationally accepted legal definition of a migrant.
             Like most agencies and organizations, we at Amnesty International
