@@ -1,33 +1,44 @@
 import React, { useState, useEffect } from "react";
-import {
-  GoogleMap,
-  withScriptjs,
-  withGoogleMap,
-  Marker,
-  InfoWindow,
-} from "react-google-maps";
-import mapStyles from "./mapStyles.js";
+import mapStyles from './mapStyles.js';
 
-const fetchURL = "https://why-leave.herokuapp.com/"
-    
+import {
+  withGoogleMap,
+  withScriptjs,
+  GoogleMap,
+  Marker,
+  InfoWindow
+} from "react-google-maps";
+
+const fetchURL = "https://why-leave.herokuapp.com/";
+
 function GoogleMaps() {
   const [selectedCountry, setSelectedCountry] = useState(null);
 
-  const [data, setData] = useState(null)
-  const getData = () =>
-    fetch(`${fetchURL}/countries`)
-      .then((res) => res.json())
+  const [data, setData] = useState(null);
 
-      useEffect(() => {
-        getData().then((data) => setData(data))
-      }, [])
+  const statistics = (population, refugees) => {
+    return ((population / refugees) * 100).toFixed(2)
+  };
+  
+  const getData = () =>
+    fetch(`${fetchURL}/countries`).then((res) => res.json());
+
+  useEffect(() => {
+    getData().then((data) => setData(data));
+  }, []);
 
   return (
     <GoogleMap
-      defaultZoom={2.5}
-      defaultCenter={{ lat: 51.39305, lng: -0.30432 }}
-      defaultOptions={{ styles: mapStyles }}
-      options={{ disableDefaultUI: true }}
+    // options={{
+    //   // gestureHandling: "greedy",
+    //   // draggable: false,
+    //   // scrollwheel: false,
+    //   // disableDoubleClickZoom: true,
+    // }}
+      defaultZoom={3}
+      defaultCenter={{ lat: 28, lng: 1.6 }}
+      defaultOptions={{ styles: mapStyles, minZoom: 3, maxZoom: 3, disableDefaultUI: true }}
+
     >
       {data?.map((country) => (
         <Marker
@@ -55,7 +66,10 @@ function GoogleMaps() {
         >
           <div>
             <h2>{selectedCountry.country}</h2>
-            <p>Population: {selectedCountry.population}  |  Refugees: {selectedCountry.refugees}</p>
+            <p>
+              Population: {selectedCountry.population} | Refugees:{" "}
+              {selectedCountry.refugees} | Percentage: {statistics(selectedCountry.refugees, selectedCountry.population)}%
+            </p>
             <p>{selectedCountry.causes[0].description} </p>
           </div>
         </InfoWindow>
@@ -66,7 +80,7 @@ function GoogleMaps() {
 
 const WrappedMap = withScriptjs(withGoogleMap(GoogleMaps));
 
-export default function Map() {
+function Map() {
   return (
     <div style={{ width: "100vw", height: "100vh" }}>
       <WrappedMap
@@ -78,3 +92,5 @@ export default function Map() {
     </div>
   );
 }
+
+export default Map;

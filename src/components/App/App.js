@@ -1,4 +1,5 @@
-import '../App/App.css'
+import React from 'react';
+import './App.css'
 import Map from '../map/map.js';
 import NavBar from '../NavBar/NavBar';
 import Routes from '../routes/routes.js';
@@ -12,6 +13,6 @@ function App() {
       <Map />
     </div>
   );
-}
+};
 
 export default App;
