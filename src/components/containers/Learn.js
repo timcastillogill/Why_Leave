@@ -23,19 +23,17 @@ export default function Learn() {
         </p>
       </div>
 
-      <div className="box2">
-        <h1>
-          Definitions: What exactly is a refugee, an asylum-seeker and a
-          migrant?
-        </h1>
-        <p>
-          The terms “refugee”, “asylum-seeker” and “migrant” are used to
-          describe people who are on the move, who have left their countries and
-          have crossed borders. The terms “migrant” and “refugee” are often used
-          interchangeably but it is important to distinguish between them as
-          there is a legal difference.
-        </p>
-
+      <div className="left">
+        <div className="box2">
+          <h1>What exactly is a refugee, an asylum-seeker and a migrant?</h1>
+          <p>
+            The terms “refugee”, “asylum-seeker” and “migrant” are used to
+            describe people who are on the move, who have left their countries
+            and have crossed borders. The terms “migrant” and “refugee” are
+            often used interchangeably but it is important to distinguish
+            between them as there is a legal difference.
+          </p>
+        </div>
         <div className="box3">
           <h1>Who is a refugee?</h1>
           <p>
@@ -48,7 +46,8 @@ export default function Learn() {
             protection.
           </p>
         </div>
-
+      </div>
+      <div className="right">
         <div className="box4">
           <h1>Who is an asylum-seeker?</h1>
           <p>
@@ -80,11 +79,20 @@ export default function Learn() {
             nevertheless be in danger if they went home.
           </p>
         </div>
-        <div className="website">
-          <p>The information above was taken from Amnesty International, to read the full article click 
-          <a href="https://www.amnesty.org/en/what-we-do/refugees-asylum-seekers-and-migrants/" target="_blank"> here</a></p>
-          </div>
-        </div>
       </div>
+      <div className="website">
+        <p>
+          The information above was taken from Amnesty International, to read
+          the full article click
+          <a
+            href="https://www.amnesty.org/en/what-we-do/refugees-asylum-seekers-and-migrants/"
+            target="_blank"
+          >
+            {" "}
+            here
+          </a>
+        </p>
+      </div>
+    </div>
   );
 }

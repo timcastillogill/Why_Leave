@@ -1,15 +1,70 @@
 .Learn {
   padding: 100px;
   text-align: center;
+  background-color: #fcecd4;
+  border-radius: 70%;
+  color: rgb(39, 38, 38);
 }
 
 .Learn .box1 h1 {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
+  font-size: 300%;
+  padding: 20px 20px;
 }
+
+.Learn h1 {
+  text-decoration: underline;
+}
+
+.Learn .left {
+  display: flex;
+  width: 50%;
+}
+
+.Learn .right {
+  display: flex;
+  margin-left: 50%;
+  /* width: 50%; */
+  
+}
+
 .Learn .website {
   font-style: italic;
+  background-color: none;
 }
-/* .box1 {
- font-family: "Open Sans";
-} */
+.box1 {
+ /* background-color: #fcecd4; */
+}
+
+.box2 {
+  background-color: #97b5bf;
+  text-align: left;
+
+}
+
+.box3 {
+  /* background-color: #f7cda9; */
+}
+
+.box4{
+  /* background-color: #a99c8c; */
+}
+
+.box5{
+  /* background-color: #b68888; */
+}
+
+
+/* sea blue: #97b5bf
+countries: #f7cda9
+pins: #ea4335
+
+Matching
+#b68888
+#c4aa97
+#fbe9e2
+#db9c84
+#a99c8c
+#ec6c5c
+#fcecd4 */
