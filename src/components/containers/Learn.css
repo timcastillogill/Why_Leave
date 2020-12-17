@@ -30,19 +30,22 @@
 }
 
 .left {
+  padding: 15px;
   display: flex;
   float: left;
   width: 50%;
-  align-items: center;
+  text-align: left;
 }
 
 .right {
+  padding: 15px;
   display: flex;
   float: right;
   width: 50%;
+  text-align: left;
 }
 
-.Learn h1 {
+h1 {
   text-decoration: underline;
 }
 
