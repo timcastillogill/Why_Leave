@@ -1,0 +1,9 @@
+.nav-bar {
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.1);
+}
+  
+.mc-auto, .navbar-nav {
+  margin-left: 80%!important;
+  float: right!important;
+}
