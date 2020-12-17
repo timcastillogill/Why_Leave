@@ -67,8 +67,7 @@ function GoogleMaps() {
           <div>
             <h2>{selectedCountry.country}</h2>
             <p>
-              Population: {selectedCountry.population} | Refugees:{" "}
-              {selectedCountry.refugees} | Percentage: {statistics(selectedCountry.refugees, selectedCountry.population)}%
+              Population: {selectedCountry.population} |   Refugees:{selectedCountry.refugees} |   Asylum seekers: { selectedCountry.refugees} |   Percentage of leavers: {statistics(selectedCountry.refugees, selectedCountry.population)}%
             </p>
             <p>{selectedCountry.causes[0].description} </p>
           </div>
