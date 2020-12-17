@@ -10,11 +10,24 @@
 .box-of-boxes {
   padding-bottom: 500px;
   padding-top: 50px;
-  justify-content: center;
 }
 
-.support-text {
-  padding: 200px;
-  color:black;
+.info-box {
+  padding: 100px;
+  color: black;
+}
+
+.lander {
+  color: black;
+}
+
+.amnesty-quote {
+  font-weight: bold;
+  color: black;
+}
+
+.welcome-presents {
+  font-style: italic;
+  color: black;
 }
 
