@@ -14,9 +14,8 @@ export default function NavBar() {
             Home
           </ReactBootStrap.Nav.Link>
           <ReactBootStrap.Nav.Link href="/learn">Learn</ReactBootStrap.Nav.Link>
-          <ReactBootStrap.Nav.Link href="/about">About</ReactBootStrap.Nav.Link>
           <ReactBootStrap.Nav.Link href="/support">Support</ReactBootStrap.Nav.Link>
-          <ReactBootStrap.Nav.Link href="/about-why-leave">About Why Leave</ReactBootStrap.Nav.Link>
+          <ReactBootStrap.Nav.Link href="/about-why-leave">About</ReactBootStrap.Nav.Link>
         </ReactBootStrap.Nav>
       </ReactBootStrap.Navbar>
     </div>
