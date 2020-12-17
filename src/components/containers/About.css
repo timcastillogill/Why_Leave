@@ -1,4 +1,4 @@
-.Home .lander {
+/* .Home .lander {
   padding: 500px 0;
   text-align: center;
 }
@@ -9,4 +9,18 @@
 }
 .krzysztof {
   padding: 50px 0;
+} */
+
+.img-container {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 3rem auto;
+  display: grid;
+  gap: 3rem;
+}
+
+@media screen and (min-width: 300px) {
+  .img-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
