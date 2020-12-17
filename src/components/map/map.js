@@ -16,6 +16,10 @@ function GoogleMaps() {
 
   const [data, setData] = useState(null);
 
+  const statistics = (population, refugees) => {
+    return ((population / refugees) * 100).toFixed(2)
+  };
+  
   const getData = () =>
     fetch(`${fetchURL}/countries`).then((res) => res.json());
 
@@ -64,7 +68,7 @@ function GoogleMaps() {
             <h2>{selectedCountry.country}</h2>
             <p>
               Population: {selectedCountry.population} | Refugees:{" "}
-              {selectedCountry.refugees}
+              {selectedCountry.refugees} | Percentage: {statistics(selectedCountry.refugees, selectedCountry.population)}%
             </p>
             <p>{selectedCountry.causes[0].description} </p>
           </div>
