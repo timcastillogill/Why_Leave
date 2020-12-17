@@ -2,10 +2,10 @@
 .circ {
   background-color: #fcecd4;
   border-radius: 50%;
-  max-width: 1400px;
+  /* max-width: 1400px; */
   width: 100%;
   margin: 0 auto;
-  padding: 180px;
+  padding-bottom: 300px;
 }
 
 .box-of-boxes {
@@ -16,6 +16,7 @@
 .Learn {
   /* margin-bottom: 50%; */
 }
+
 
 .masterBox {
   /* margin-bottom: 50%; */
@@ -48,6 +49,13 @@
 .website {
   align-items: center;
   font-style: italics;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #fcecd4;
+  color: grey;
+  text-align: center;
 }
 
 
