@@ -2,7 +2,7 @@
 
 ## **About Project**
 
-An interactive map of the world with the ability to see what's going on in specific countries in terms of human rights, abuses and to find information regarding why people are actually leaving their home countries.
+An interactive map of the world with the ability to see what's going on in specific countries in terms of human rights, abuses and information regarding why people are actually leaving their home countries.
 
 This repository is a frontend to this project [here](https://github.com/Joshuamac2/Why-leave-backend).
 
