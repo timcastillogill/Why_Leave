@@ -1,70 +1,134 @@
-# Getting Started with Create React App
+# **Why Leave?**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## **About Project**
 
-## Available Scripts
+Map of the world with ability to see what's going on in specific country in terms of human rights, abuses and to find information why people are actually fleeing home countries.
 
-In the project directory, you can run:
+This repository is a frontend to this project [here](https://github.com/Joshuamac2/Why-leave-backend).
 
-### `yarn start`
+Pulling information from the backend API project, this web application will display interactive markers on a map according to a list of [UNHCR](https://www.unhcr.org/emergencies.html) emergency status countries.
 
-Runs the app in the development mode.\
+You can visit the web app [here](https://why-leave.vercel.app/)
+
+---
+
+## **User Stories**
+
+```
+
+As a user,
+
+So that I can see the world
+
+I want to see a map
+
+```
+
+```
+
+As a user,
+
+So that I am clear what a refugee is
+
+I want to see a definition of a Refugee.
+
+```
+
+```
+
+As a user,
+
+So that I can see troubled countries
+
+I want to see a pin in each of these countries
+
+```
+
+```
+
+As a user,
+
+So that I can understand why people are fleeing their home country
+
+I can click on the pin and see WHY they are leaving.
+
+```
+
+```
+
+As a user,
+
+So that I can understand why people are fleeing their home country
+
+I can click on the pin and see the AMOUNT of people leaving.
+
+```
+
+```
+
+As a user,
+
+So that I can help refugees
+
+I can click a link to take me to a relevant charity or petition
+
+```
+
+## **Getting started:**
+
+Clone this repository
+
+```
+git clone https://github.com/timcastillogill/Why_Leave_Front_End.git
+```
+
+Move to the project directory
+
+```
+
+cd why_leave_front_end
+
+```
+
+Run the package installer
+
+```
+
+yarn install
+
+```
+
+### **To run tests:**
+
+```
+
+./node_modules/.bin/cypress open
+
+```
+
+## **To run the web app**
+
+In the project directory, run:
+```
+yarn start
+```
+Runs the app in the development mode.
+
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
+The page will reload if you make edits.
+
 You will also see any lint errors in the console.
 
-### `yarn test`
+```
+yarn build
+```
+Builds the app for production to the `build` folder.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
+The build is minified and the filenames include the hashes.
+
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
