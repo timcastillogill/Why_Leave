@@ -2,13 +2,13 @@
   position: fixed;
   z-index: 1;
   width: 100%;
-  background-color: #c3c0c085;
+  background-color: #70878f85;
 }
 
 .nav-bar a:link {
-  color: black!important;
+  color: rgb(51, 53, 56)!important;
 } 
 
 .nav-bar a:hover {
-  color: rgb(148, 125, 105)!important;
+  color: rgb(138, 115, 94)!important;
 }
