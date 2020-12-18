@@ -15,63 +15,39 @@ You can visit the web app [here](https://why-leave.vercel.app/)
 ## **User Stories**
 
 ```
-
 As a user,
-
 So that I can see the world
-
 I want to see a map
-
 ```
 
 ```
-
 As a user,
-
 So that I am clear what a refugee is
-
 I want to see a definition of a Refugee.
-
 ```
 
 ```
-
 As a user,
-
 So that I can see troubled countries
-
 I want to see a pin in each of these countries
-
 ```
 
 ```
-
 As a user,
-
 So that I can understand why people are fleeing their home country
-
 I can click on the pin and see WHY they are leaving.
-
 ```
 
 ```
-
 As a user,
-
 So that I can understand why people are fleeing their home country
-
 I can click on the pin and see the AMOUNT of people leaving.
-
 ```
 
 ```
-
 As a user,
-
 So that I can help refugees
-
 I can click a link to take me to a relevant charity or petition
-
 ```
 
 ## **Getting started:**
@@ -85,25 +61,19 @@ git clone https://github.com/timcastillogill/Why_Leave_Front_End.git
 Move to the project directory
 
 ```
-
 cd why_leave_front_end
-
 ```
 
 Run the package installer
 
 ```
-
 yarn install
-
 ```
 
 ### **To run tests:**
 
 ```
-
 ./node_modules/.bin/cypress open
-
 ```
 
 ## **To run the web app**
