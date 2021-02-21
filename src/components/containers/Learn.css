@@ -20,15 +20,6 @@
   margin-right: auto;
 }
 
-.Learn {
-  /* margin-bottom: 50%; */
-}
-
-.masterBox {
-  /* margin-bottom: 50%; */
-  /* margin-top: 20%; */
-}
-
 .left {
   padding: 15px;
   display: flex;
@@ -70,17 +61,3 @@ footer {
   color: rgb(46, 46, 46);
   text-align: center;
 }
-
-
-/* sea blue: #97b5bf
-countries: #f7cda9
-pins: #ea4335
-
-Matching
-#b68888
-#c4aa97
-#fbe9e2
-#db9c84
-#a99c8c
-#ec6c5c
-#fcecd4 */
