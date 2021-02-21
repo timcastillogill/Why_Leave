@@ -3,7 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import Support from "../support/Support";
 import AboutWhyLeave from "../about/About";
 import Learn from "../learn/Learn";
-import Map from "../map/Map";
+import Map from "../map/map";
 
 export default function Routes() {
   return (
