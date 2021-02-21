@@ -29,15 +29,9 @@ function GoogleMaps() {
 
   return (
     <GoogleMap
-    // options={{
-    //   // draggable: false,
-    //   // scrollwheel: false,
-    //   // disableDoubleClickZoom: true,
-    // }}
       defaultZoom={3}
       defaultCenter={{ lat: 28, lng: 1.6 }}
       defaultOptions={{ styles: mapStyles, minZoom: 3, maxZoom: 3, disableDefaultUI: true, gestureHandling: "greedy" }}
-
     >
       {data?.map((country) => (
         <Marker
