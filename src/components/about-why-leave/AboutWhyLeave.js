@@ -1,7 +1,7 @@
 import React from "react";
 import "./AboutWhyLeave.css";
-import About from "./About";
-import "./About.css";
+import Developers from "./developers/Developers";
+import "./developers/Developers.css";
 
 export default function AboutWhyLeave() {
   return (
@@ -69,7 +69,7 @@ export default function AboutWhyLeave() {
       <br></br>
       <br></br>
       <div className="dev-box container">
-        <About />
+        <Developers />
       </div>
     </div>
   );

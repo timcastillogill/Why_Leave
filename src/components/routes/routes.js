@@ -1,8 +1,8 @@
 import React from "react";
 import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
-import Support from "../containers/Support";
-import AboutWhyLeave from "../containers/AboutWhyLeave";
-import Learn from "../containers/Learn";
+import Support from "../support/Support";
+import AboutWhyLeave from "../about-why-leave/AboutWhyLeave";
+import Learn from "../learn/Learn";
 import Map from "../map/Map";
 
 export default function Routes() {
