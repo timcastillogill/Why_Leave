@@ -1,5 +1,5 @@
 import React from "react";
-import "./AboutWhyLeave.css";
+import "./About.css";
 import Developers from "./developers/Developers";
 import "./developers/Developers.css";
 
